@@ -1,0 +1,15 @@
+CC=gcc
+CFLAGS=-O0 -w
+
+SRC=fibonacci.c
+OBJ=fibonacci.o
+EXE=fibonacci.exe
+DEFS=_WINDOWS_OS_
+
+compile:
+	$(CC) $(CFLAGS) -D$(DEFS) $(SRC) -c -o $(OBJ)
+all: compile
+	$(CC) $(CFLAGS) -D$(DEFS) $(OBJ) -o $(EXE)
+clean:
+	rm -rf $(OBJ) $(EXE)
+.PHONY: all clean
