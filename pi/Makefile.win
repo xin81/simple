@@ -1,0 +1,17 @@
+CC=gcc
+CFLAGS=-Og -Wall
+
+SYMBOLS=-D_USE_MATH_DEFINES -D_WINDOWS_
+LIBS=m
+
+SRC=pi.c
+OBJ=piwin64.o
+TARGET=piwin64.exe
+
+compile:
+	$(CC) $(CFLAGS) $(SYMBOLS) $(SRC) -l$(LIBS) -c -o $(OBJ)
+all: compile
+	$(CC) $(CFLAGS) $(SYMBOLS) $(OBJ) -l$(LIBS) -o $(TARGET)
+clean:
+	rm -rf $(OBJ) $(TARGET)
+.PHONY: all clean

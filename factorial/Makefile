@@ -2,8 +2,8 @@
 CC=gcc
 CFLAGS=-Og -Wall
 
-SRC=factorial.c
-OBJ=factorial.o
+SRC=factorial.c main.c
+OBJ=factorial.o main.o
 TARGET=factorial
 
 compile:

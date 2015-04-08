@@ -1,9 +1,13 @@
+/*
 #include<stdio.h>
 #include<stdlib.h>
 #include<stdlib.h>
 #include<limits.h>
 #include<inttypes.h>
 #include<stdint.h>
+*/
+#include "factorial.h"
+
 /*
 * @return n!
 */
@@ -14,6 +18,7 @@ uint64_t factorial(uint64_t n){
 	return (n*factorial(n-1));
 }
 
+/*
 int main(int argc, char* argv[]){
 	int progID=0;
 	if(argc > 1){ // a number is required
@@ -38,3 +43,4 @@ int main(int argc, char* argv[]){
 	}
 	return EXIT_SUCCESS;
 }
+*/

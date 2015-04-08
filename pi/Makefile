@@ -1,0 +1,24 @@
+CC=gcc
+CFLAGS=-Og -Wall
+
+## SYMBOLS=-D_LINUX_
+##-D_USE_MATH_DEFINES
+## -D_LINUX_
+
+STD=c99
+LIB_PATH=../lib
+LIBS=-lm -lfactorial
+INCLUDE=../include
+
+SRC=main.c pi.c
+OBJ=main.o pi.o
+TARGET=pi
+
+##-D_WINDOWS_
+compile:
+	$(CC) $(CFLAGS) -std=$(STD) -I$(INCLUDE) $(SRC) -c
+all: compile
+	$(CC) $(CFLAGS) -std=$(STD) -L$(LIB_PATH) $(OBJ) $(LIBS) -o $(TARGET)
+clean:
+	rm -rf $(OBJ) $(TARGET)
+.PHONY: all clean
