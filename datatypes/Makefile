@@ -2,7 +2,6 @@
 CC=gcc
 CFLAGS=-Og -Wall
 SYMBOLS=-D_SYSTEM64_ -D_USE_MATH_DEFINES
-## -D_WINDOWS_
 SRC=dt.c
 OBJ=dt.o
 TARGET=dt

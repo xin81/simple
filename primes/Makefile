@@ -3,7 +3,6 @@ CFLAGS=-O0 -w
 
 SRC=primes.c
 OBJ=primes.o
-LIBS=-lm
 EXE=primes
 
 compile:
