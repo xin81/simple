@@ -5,3 +5,8 @@ are very basic ones which most of you already know.
 When you need to look up an algorithm, feel free to copy and paste my source files.
 However, keep in mind that most source codes have been developed on a linux machine.
 So, there is no 100% guarantee for all souce files to work on a windows machine.
+
+programming language: C
+compiler: gcc-4.8
+IDE: eclipse
+operating system: Linux Mint 17.1 (64-Bit)
