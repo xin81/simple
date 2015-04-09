@@ -1,11 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<stdlib.h>
-/*
-#include<limits.h>
-#include<inttypes.h>
-#include<stdint.h>
-*/
 #include "factorial.h"
 int main(int argc, char* argv[]){
         int progID=0;
