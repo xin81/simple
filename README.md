@@ -8,5 +8,5 @@ So, there is no 100% guarantee for all souce files to work on a windows machine.
 
 programming language: C
 compiler: gcc-4.8
-IDE: eclipse
-operating system: Linux Mint 17.1 (64-Bit)
+IDE: eclipse 3.8 (this should be not relevant for a successful compilation - feel free to use your own IDE)
+operating system: Linux Mint 17.1 (64-Bit) (all source files should work on any linux machine)
