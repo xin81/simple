@@ -1,11 +1,5 @@
 #include "quicksort.h"
 
-void display(int* array, const int MAX){
-  for(int i=0; i < MAX; i++){
-    printf("%d ", array[i]);
-  }
-}
-
 void swap(int* a, int* b){
 	int tmp=0;
 	tmp=*a;

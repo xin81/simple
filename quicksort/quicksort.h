@@ -1,12 +1,5 @@
 #ifndef QUICKSORT_H_
 #define QUICKSORT_H_
-#include<stdio.h>
-#include<stdlib.h>
-#include<stddef.h>
-#include<stdint.h>
-
-// prints out results
-void display(int* array,const int MAX);
 
 /*
  * swaps two field values
