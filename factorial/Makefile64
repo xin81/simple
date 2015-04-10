@@ -1,0 +1,19 @@
+## Makefile: factorial for Linux
+CC=gcc
+CFLAGS=-Og -Wall
+SYMBOLS=_SYSTEM64_
+## -D_SYSTEM64_
+SRC=factorial.c main.c
+OBJ=factorial64.o main64.o
+TARGET=factorial64
+
+factorial64.o: factorial.c
+	$(CC) $(CFLAGS) -D$(SYMBOLS) $< -c -o $@
+
+main64.o: main.c
+	$(CC) $(CFLAGS) -D$(SYMBOLS) $< -c -o $@
+
+all: factorial64.o main64.o
+	$(CC) $(CFLAGS) -D$(SYMBOLS) $(OBJ) -o $(TARGET)
+clean:
+	rm -rf $(OBJ) $(TARGET)

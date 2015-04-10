@@ -39,11 +39,11 @@ int main(void){
 	}
 	LDBL error=sqrt(pow(((M_PI-pi)*1.0L), 2.0L));
 #if !defined(_WINDOWS_)	
-	printf("%s's pi=%Lf\n", menu[choice], pi);
-	printf("sqrt(error^2)=%Lf\n",error);
+	printf("%s's pi=%.48Lf\n", menu[choice], pi);
+	printf("sqrt(error^2)=%.48Lf\n",error);
 #else
-	printf("%s's pi=%lf\n", menu[choice], pi);
-	printf("sqrt(error^2)=%lf\n", error);
+	printf("%s's pi=%.48lf\n", menu[choice], pi);
+	printf("sqrt(error^2)=%.48lf\n", error);
 	system("PAUSE");
 #endif
 	return EXIT_SUCCESS;

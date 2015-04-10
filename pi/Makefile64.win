@@ -7,12 +7,12 @@ CFLAGS=-Og -Wall
 
 STD=c99
 LIB_PATH=../lib
-LIBS=-lm -lfactorial32
+LIBS=-lm -lfactorial64
 INCLUDE=../include
 
 SRC=main.c pi.c
 OBJ=main.o pi.o
-TARGET=piwin32.exe
+TARGET=piwin64.exe
 
 ##-D_WINDOWS_
 compile:

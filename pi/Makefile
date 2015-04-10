@@ -7,7 +7,7 @@ CFLAGS=-Og -Wall
 
 STD=c99
 LIB_PATH=../lib
-LIBS=-lm -lfactorial
+LIBS=-lm -lfactorial32
 INCLUDE=../include
 
 SRC=main.c pi.c
