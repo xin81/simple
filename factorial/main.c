@@ -15,14 +15,15 @@ int main(int argc, char* argv[]){
 	strcpy(program, argv[0]);
 	if(argc > 1){
 		if(strcmp(argv[1], "--help")!=0){
-			UINT64 n=strtoul(argv[1], NULL, 10);
-			UINT64 f=factorial(n);
+			// UINT64 n=strtoul(argv[1], NULL, 10);
+			int n=(int)atoi(argv[1]);
+			UINT f=factorial(n);
 			if(n < MAX){
-				printf("factorial(%" PRIu64 ")", n);
+				printf("factorial(%" PRId32 ")", n);
 				printf("=%" PRIu64 "\n", f);
 			}else{
    			char buf1[100];
-   			if(sprintf(buf1, "factorial(%" PRIu64 ")=%" PRIu64 "!\n%" PRIu64 " is too large for this program",  n, n, n)>(-1)){
+   			if(sprintf(buf1, "factorial(%" PRId32 ")=%" PRId32 "!\n%" PRId32 " is too large for this program",  n, n, n)>(-1)){
       			perror(buf1);
   				}
 				print_help(program);

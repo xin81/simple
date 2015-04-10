@@ -5,8 +5,9 @@
 #include<inttypes.h>
 #include<stdint.h>
 
-typedef uint64_t UINT64;
-UINT64 factorial(UINT64);
+typedef uint64_t UINT;
+//typedef uint32_t UINT;
+UINT factorial(int);
+// define MAX	34; //if typedef uint32_t UINT
 #define MAX	66
-
 #endif

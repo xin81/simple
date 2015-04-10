@@ -1,5 +1,5 @@
 #include "factorial.h"
-UINT64 factorial(UINT64 n){
+UINT factorial(int n){
 	if(n < 2){
 		return 1;
 	}

@@ -7,10 +7,10 @@ pi=2*sum((2^k k!^2)/(2k+1)!
 */
 LDBL newton_pi(){
 	LDBL sum=0.0;
-	uint64_t k=0;
+	int k=0;
 	do{
-		uint64_t mf=(uint64_t)(pow(2, (k*1))*pow(factorial(k), 2));
-		uint64_t df=(uint64_t)(factorial((2*k)+1));
+		UINT mf=(UINT)(pow(2, (k*1))*pow(factorial(k), 2));
+		UINT df=(UINT)(factorial((2*k)+1));
 		sum+=((mf*1.0)/(df*1.0));
 		k++;
 	}while(sum < (M_PI/2.0));
