@@ -1,20 +1,16 @@
+## Makefile ##
 CC=gcc
 CFLAGS=-Og -Wall
-
-## SYMBOLS=-D_LINUX_
-##-D_USE_MATH_DEFINES
-## -D_LINUX_
-
 STD=c99
+
 LIB_PATH=../lib
-LIBS=-lm -lfactorial32
+LIBS=-lm -lfactorial
 INCLUDE=../include
 
 SRC=main.c pi.c
 OBJ=main.o pi.o
 TARGET=pi
 
-##-D_WINDOWS_
 compile:
 	$(CC) $(CFLAGS) -std=$(STD) -I$(INCLUDE) $(SRC) -c
 all: compile

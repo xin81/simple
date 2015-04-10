@@ -1,24 +1,21 @@
+## Makefile ##
 CC=gcc
 CFLAGS=-Og -Wall
-
-## SYMBOLS=-D_LINUX_
-##-D_USE_MATH_DEFINES
-## -D_LINUX_
-
+SYMBOLS=-D_WINDOWS_
 STD=c99
+
 LIB_PATH=../lib
-LIBS=-lm -lfactorial32
+LIBS=-lm -lfactorial
 INCLUDE=../include
 
 SRC=main.c pi.c
 OBJ=main.o pi.o
-TARGET=piwin32.exe
+TARGET=pi32w.exe
 
-##-D_WINDOWS_
 compile:
-	$(CC) $(CFLAGS) -std=$(STD) -I$(INCLUDE) $(SRC) -c
+	$(CC) $(CFLAGS) -D$(SYMBOLS) -std=$(STD) -I$(INCLUDE) $(SRC) -c
 all: compile
-	$(CC) $(CFLAGS) -std=$(STD) -L$(LIB_PATH) $(OBJ) $(LIBS) -o $(TARGET)
+	$(CC) $(CFLAGS) -D$(SYMBOLS) -std=$(STD) -L$(LIB_PATH) $(OBJ) $(LIBS) -o $(TARGET)
 clean:
 	rm -rf $(OBJ) $(TARGET)
 .PHONY: all clean
